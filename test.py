@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 
-import Data
+import Data.BaseData as BaseData
 M = 1
 T = 1
 
-data = Data.LinearData(M, T)
+data = BaseData.LinearData(M, T)
 data.setM(-2.5)
 data.setT(-1)
 

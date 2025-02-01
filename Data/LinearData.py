@@ -1,13 +1,12 @@
+# Linear Data
+
 import numpy as np
 
+from Data.BaseData import BaseData
 
 
-class Data:
-    def __init__(self, x: np.ndarray, y: np.ndarray) -> None:
-        self._X: np.ndarray = x
-        self._Y: np.ndarray = y
 
-class LinearData(Data):
+class LinearData(BaseData):
 
     X_STEP_SIZE     = 0.1
 
@@ -99,4 +98,6 @@ class LinearData(Data):
     def _generate(self):
         self._updateM()
 
+
+        
 

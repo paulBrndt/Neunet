@@ -21,7 +21,7 @@ net.add(ActivationLayer(activationFunctions.tanh, activationFunctions.tanhPrime)
 
 net.use(lossFunctions.mse, lossFunctions.msePrime)
 
-net.fit(data.getX(), data.getY(), epochs=10000, learningRate=0.05)
+net.fit(data.getX(), data.getY(), epochs=100, learningRate=0.05)
 
 out = net.predict(data.getX())
 out = np.array(out).squeeze()
