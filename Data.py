@@ -11,11 +11,11 @@ class LinearData(Data):
 
     X_STEP_SIZE     = 0.1
 
-    def __init__(self, m: float = 0, t: float = 0, minX: float = 0, maxX: float = 10, forceUpdate: bool = False) -> None:
+    def __init__(self, m: float = 1, t: float = 0, minX: float = 0, maxX: float = 10, forceUpdate: bool = False) -> None:
         """Create a new set of Linear Data, for 1 Linear Function
 
         Args:
-            m (float): angle. Defaults to 0.
+            m (float): angle. Defaults to 1.
             t (float): shift upwards. Defaults to 0.
             minX (float): start of x. Defaults to 0.
             maxX (float): end of x. Defaults to 10.
